@@ -76,4 +76,14 @@ chmod 750 sampledir
 # chmod also supports -R option to recursively set permissions
 chmod -R g+rwX demodir
 
+# chown can be used to change ownership of a file
+chown student foofile
 
+# chown can be used with -R option to change directory tree owner
+chown -R student foodir
+
+# chown, when used with colon (:) changes file's group
+chown :admins foodir
+
+# both group and owner can also be changed
+chown visitor:guests foodir
